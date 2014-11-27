@@ -18,7 +18,7 @@ public class Exam {
 	void countUp(int count) {
         int i = 0;
         while(i<count){
-            count++;
+            i++;
 
         }
 
@@ -32,6 +32,11 @@ public class Exam {
 
 	void countDown(int count) {
 
+        for(int i =0 ; i < count ;i--){
+                i--;
+        }
+
+
 	}
 
 	/*
@@ -40,7 +45,12 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-		return bDummy;
+        if(x>0){
+        return true;
+        }else{
+        return false;
+        }
+
 	}
 
 	/*
@@ -49,7 +59,13 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
-		return iDummy;
+
+         if(x > y){
+          return x;
+         }else{
+         return y;
+         }
+
 	}
 
 	/*
@@ -58,7 +74,8 @@ public class Exam {
 	*/
 
 	int sum(int x,int y) {
-		return iDummy;
+        int total = x+y;
+        return total;
 	}
 
 	/*
@@ -67,7 +84,10 @@ public class Exam {
 	*/
 
 	double average (int x,int y,int z) {
-		return dDummy;
+        int a = (x+y+z)/3;
+        double aa = (double)a;
+
+        return aa;
 	}
 
 	/*
@@ -76,7 +96,15 @@ public class Exam {
 	*/
 
 	char rank (int score) {
-		return cDummy;
+        if(score >89){
+        return "A";
+        }else if(69 < score && score < 90){
+        return "B";
+        }else if(44<score && score <70){
+        return "C";
+        }else{
+        return "D";
+        }
 	}
 
 	/*
@@ -94,7 +122,9 @@ public class Exam {
 	*/
 
 	double getTriangleArea (int x,int y,int z) {
-		return dDummy;
+        int s = (x+y+z)/2;
+        double ss = Math.sqrt(s*(s-x)*(s-y)*(s-z));
+		return ss;
 	}
 
 	/*
@@ -104,7 +134,9 @@ public class Exam {
 	*/
 
 	double calcBMI (int x,int y,int z) {
-		return dDummy;
+        int s = y/x*z;
+
+		return s;
 	}
 
 	/*
@@ -113,7 +145,11 @@ public class Exam {
 	*/
 
 	int getRandom (int min,int max) {
-		return iDummy;
+        Random rand = new Random();
+        int mi = rand.nextInt(min);
+        int ma = rand.nextInt(max);
+		return mi;
+		return ma;
 	}
 
 	/*

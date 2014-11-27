@@ -16,7 +16,10 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
- 
+	while (true){
+		System.out.print("count="+count);
+		count++;
+	} 
 	}
 
 	/*
@@ -25,7 +28,7 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-
+	
 	}
 
 	/*
@@ -34,7 +37,11 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-		return bDummy;
+	if (x > 0){
+		return true;
+	}else{
+		return false;
+	}
 	}
 
 	/*
@@ -43,7 +50,11 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
-		return iDummy;
+	if (x > y){		
+		return x;
+	}else{
+		return y;
+	}
 	}
 
 	/*
@@ -52,7 +63,15 @@ public class Exam {
 	*/
 
 	int sum(int x,int y) {
-		return iDummy;
+	Scanner stdIn = new Scanner(System.in);
+	
+	System.out.print("x:");
+	 stdIn.nextInt();
+
+	System.out.print("y:");
+	 stdIn.nextInt();
+
+	System.out.print((x + y));
 	}
 
 	/*
@@ -61,7 +80,10 @@ public class Exam {
 	*/
 
 	double average (int x,int y,int z) {
+		
+	
 		return dDummy;
+
 	}
 
 	/*
@@ -88,7 +110,23 @@ public class Exam {
 	*/
 
 	double getTriangleArea (int x,int y,int z) {
-		return dDummy;
+	Scanner stdIn = new Scanner(System.in);
+
+	System.out.print("x:");
+	stdIn.nextDouble();
+
+	System.out.print("y:");
+	stdIn.nextDouble();
+
+	System.out.print("z:");
+	stdIn.nextDouble();
+
+	double a = (x + y + z) /2;
+	
+	double b = (Math.sqrt(a * (a-x) * (a-y) * (a-z)));
+
+	System.out.print(b);
+
 	}
 
 	/*

@@ -16,7 +16,8 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
- 
+          for (int i = 0; i > N; ++i)
+              return i;
 	}
 
 	/*
@@ -25,7 +26,8 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-
+          for (int i = 0; i < N; ++i)
+              return i;
 	}
 
 	/*
@@ -43,8 +45,7 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
-	      System.out.println("max(x,y)");
-              return;
+          return iDummy;
 	}
 
 	/*
@@ -53,7 +54,8 @@ public class Exam {
 	*/
 
 	int sum(int x,int y) {
-		return iDummy;
+          int s = (x + y);
+		return s;
 	}
 
 	/*
@@ -72,6 +74,8 @@ public class Exam {
 	*/
 
 	char rank (int score) {
+
+          char rank[] = ()
 		return cDummy;
 	}
 

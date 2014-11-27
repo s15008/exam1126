@@ -103,6 +103,11 @@ public class Exam {
 	*/
 
 	double getTriangleArea (int x,int y,int z) {
+          Scanner stdin = new Scanner(System.in);
+          x = stdin.nextInt();
+          y = stdin.nextInt();
+          z = stdin.nextInt();
+
           int s = (x + y + z) / 2;
 
           return (Math.sqrt(s * (s - x) * (s -y ) * (s - z)));
@@ -114,7 +119,7 @@ public class Exam {
 	BMI＝体重（kg）÷（身長（m）×身長（m））
 	*/
 
-	double calcBMI (int x,int y,int z) {
+	double calcBMI (int weight,int heigth) {
 		return dDummy;
 	}
 

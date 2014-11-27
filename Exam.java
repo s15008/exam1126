@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
+import java.util.Arrays;
 
 public class Exam {
 
@@ -82,16 +83,16 @@ public class Exam {
 	*/
 
 	char rank (int score) {
-          if((score > 100) || (score < 45)){
-            return "D";
-          }else if(score >= 90){
-            return "A";
+          if(score >= 90){
+            return 'A';
           }else if(score >= 70){
-            return "B";
+            return 'B';
+          }else if(score >= 45){
+            return 'C';
           }else{
-            return "C";
-          }
-	}
+            return 'D';
+           }
+      }
 
 	/*
 	問8 intの引数 width,height を 受け取り 四角形の面積を返す
@@ -139,7 +140,8 @@ public class Exam {
 	*/
 
 	int[] descSort(int[] array) {
-		return iaDummy;
+              Arrays.sort(array);
+		return array;
 	}
 
 	/*
@@ -167,9 +169,18 @@ public class Exam {
 	/*
 	問15 自由課題
 	自由に Java のプログラミングをせよ，但し説明をつけよ
+        名前を入力させて出力させるプログラム
 	*/
 
 	void execute() {
+          Scanner stdIn = new Scanner(System.in);
+
+          System.out.println("姓：");
+          String sei = stdIn.next();
+          System.out.println("名：");
+          String namae = stdIn.next();
+
+          System.out.println(sei + namae);
 
 	}
 

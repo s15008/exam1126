@@ -16,7 +16,11 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
- 
+            int i = 0;
+            while(i < count){
+              i++;
+            }
+            return i ;
 	}
 
 	/*
@@ -25,6 +29,7 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
+         
 
 	}
 
@@ -78,8 +83,7 @@ public class Exam {
 	メソッド getRectAreaを定義せよ
 	*/
 
-	int getRectArea (int width, int height) {
-		return iDummy;
+        
 	}
 
 	/*

@@ -62,7 +62,7 @@ public class Exam {
 	*/
 
 	int sum(int x,int y) {
-		return iDummy;
+		return (x + y);
 	}
 
 	/*

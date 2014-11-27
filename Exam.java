@@ -99,7 +99,19 @@ public class Exam {
 	*/
 
 	char rank (int score) {
-		return cDummy;
+
+          char a[] = {'A','B','C','D'};
+
+          if (score >= 90){
+            return a[0];
+          }else if (score >= 70 && score <= 90){
+            return a[1];
+          }else if (score >= 45 && score <= 70){
+            return a[2];
+          }else{
+            return a[3];
+          }
+
 	}
 
 	/*

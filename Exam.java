@@ -9,14 +9,18 @@ public class Exam {
 	double dDummy = 0.0d;
 	String sDummy = "";
 	int [] iaDummy = new int [0];
-
-	/*
+     Exam count=new Exam();
+     /*
 	問1 引数 count を受け取り,0からcountまで1づつ増加して表示する
 	メソッド countUp を定義せよ。但しwhileを用いること。
 	*/
-	
+
 	void countUp(int count) {
- 
+    int i=0;
+    while(i<count+1){
+     System.out.println(i);
+    }
+
 	}
 
 	/*
@@ -120,7 +124,7 @@ public class Exam {
 	}
 
 	/*
-	問13 int型の引数 x を受け取り 
+	問13 int型の引数 x を受け取り
 	3 で割り切れるならばFizz
 	5 で割り切れるなら Buzz
 	3 でも 5 でも割り切れる場合は，FizzBuzz

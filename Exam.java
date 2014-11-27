@@ -2,7 +2,6 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Exam {
-
 	int iDummy = 0;
 	char cDummy = 'a';
 	boolean bDummy = false;
@@ -14,9 +13,13 @@ public class Exam {
 	問1 引数 count を受け取り,0からcountまで1づつ増加して表示する
 	メソッド countUp を定義せよ。但しwhileを用いること。
 	*/
-	
 	void countUp(int count) {
- 
+        Scanner stdIn = new Scanner(System.in);
+        int i = 0;
+        while (i <= count){
+            i = i++;
+        }
+        System.out.println(i);
 	}
 
 	/*
@@ -25,7 +28,10 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-
+        Scanner stdIn = new Scanner(System.in);
+        for (int i = 0; i <= count; i++){
+            System.out.println(i);
+        }
 	}
 
 	/*
@@ -34,7 +40,12 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-		return bDummy;
+        Scanner stdIn = new Scanner(System.in);
+        if (x < 0){
+            return false;
+        }else{
+            return true;
+        }
 	}
 
 	/*

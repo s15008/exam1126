@@ -32,12 +32,8 @@ public class Exam {
                   i--;
           }
 
-
-    }((
-
    }
 
-}
 
 	/*
 	問3 intの引数 x を 受け取り，正のであればtrue,負であればfalseを返す

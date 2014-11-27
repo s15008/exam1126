@@ -2,7 +2,6 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Exam {
-
 	int iDummy = 0;
 	char cDummy = 'a';
 	boolean bDummy = false;
@@ -47,7 +46,7 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
-		return iDummy;
+          return (Math.max(x,y));
 	}
 
 	/*

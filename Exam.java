@@ -71,7 +71,8 @@ public class Exam {
 	*/
 
 	double average (int x,int y,int z) {
-		return dDummy;
+                double ave = (x + y + z) / 2;
+		return ave;
 	}
 
 	/*

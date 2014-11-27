@@ -29,7 +29,11 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-	}
+	  for(int i = 0; count > i;count--){
+            System.out.println(count);
+          }
+        
+        }
 
 	/*
 	問3 intの引数 x を 受け取り，正のであればtrue,負であればfalseを返す

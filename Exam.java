@@ -109,7 +109,7 @@ public class Exam {
 	*/
 
 	int getRectArea (int width, int height) {
-		return iDummy;
+		return width * height;
 	}
 
 	/*

@@ -139,7 +139,9 @@ public class Exam {
 	*/
 
 	int getRandom (int min,int max) {
-		return iDummy;
+         Random rand =new Random();
+          int a =rand.nextInt(max)+min;
+        return a;
 	}
 
 	/*

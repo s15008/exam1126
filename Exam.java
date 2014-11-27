@@ -150,7 +150,20 @@ public class Exam {
 	*/
 
 	int[] descSort(int[] array) {
-		return iaDummy;
+		int t=0;
+        for(int d=1;d<array.length;d++){
+        for(int i=0;i<array.length-1;i++){
+         int max=Math.max(array[i],array[d]);
+         if(max==array[d]){
+         t=array[i];
+         array[i]=array[d];
+         array[d]=t;
+         }
+
+        }
+        }
+
+        return array;
 	}
 
 	/*
@@ -163,7 +176,16 @@ public class Exam {
 	*/
 
 	String FizzBuzz(int x) {
-		return sDummy;
+		if(x%3==0){
+        return "Fizz";
+        }else if(x%5==0){
+        return   "Buzz";
+        }else if(x%5==0&&x%3==0){
+         return "FizzBuzz";
+        }else{
+        return "x";
+        }
+
 	}
 
 	/*

@@ -68,7 +68,9 @@ public class Exam {
 	*/
 
 	int sum(int x,int y) {
+
 		return x + y;
+
 	}
 
 	/*
@@ -77,7 +79,9 @@ public class Exam {
 	*/
 
 	double average (int x,int y,int z) {
-		return dDummy;
+
+		return (x + y + z)/3;
+
 	}
 
 	/*

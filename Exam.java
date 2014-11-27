@@ -16,6 +16,11 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
+
+          for (i = 0; i < count; i++){
+             return count;
+
+          }
  
 	}
 

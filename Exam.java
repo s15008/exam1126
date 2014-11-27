@@ -19,10 +19,7 @@ public class Exam {
         int i = 0;
         while(i<count){
             i++;
-
         }
-
-
 	}
 
 	/*
@@ -192,6 +189,7 @@ public class Exam {
 
 	void TimesTable(){
 		int[][] timestable = new int[9][9];
+
 	}
 
 	/*

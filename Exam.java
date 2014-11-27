@@ -112,6 +112,8 @@ public class Exam {
 		return width * height;
 	}
 
+
+
 	/*
 	問9 三角形の辺の長さ x,y,z を 受け取り 三角形の面積を返す
 	メソッド getTriangleAreaを定義せよ

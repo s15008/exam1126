@@ -120,7 +120,15 @@ public class Exam {
 	*/
 
 	double getTriangleArea (int x,int y,int z) {
-		return dDummy;
+
+		int s = (x + y + z)/2;
+
+		x = s*(s-x);
+		y = (s-y);
+		z = (s-z);
+
+		int S = x * y * z;
+		return Math.spor(S);
 	}
 
 	/*

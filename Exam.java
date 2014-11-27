@@ -83,18 +83,17 @@ public class Exam {
 	char rank (int score) {
           if ((score >= 0) && (score <= 100)){
             if (score >= 90){
-              return "A";
+              return 'A';
             }else if (score >= 70){
-              return "B"; 
+              return 'B'; 
             }else if (score >= 45){
-              return "C";
+              return 'C';
             }else {
-              return "D";
+              return 'D'; 
             }
-          
-          }
-	}
-
+	   }
+              return 'D';
+        }
 	/*
 	問8 intの引数 width,height を 受け取り 四角形の面積を返す
 	メソッド getRectAreaを定義せよ
@@ -130,7 +129,11 @@ public class Exam {
 	*/
 
 	int getRandom (int min,int max) {
-		return iDummy;
+                Random rnd = new Random();
+                int a = Math.abs(min - max);
+                int rndm = rnd.nextInt(a);
+
+		return rndm;
 	}
 
 	/*

@@ -18,7 +18,7 @@ public class Exam {
 	void countUp(int count) {
         while ( 0 <= count ){
             System.out.println(count);
-            num--;
+            count--;
         }
  
 	}
@@ -68,7 +68,7 @@ public class Exam {
        */
 
     int sum(int x,int y) {
-        return iDummy;
+        return x + y;
     }
 
     /*

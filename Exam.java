@@ -34,7 +34,11 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-		return bDummy;
+          if (x > 0){
+            return true;
+          }else{
+            return false;
+          }
 	}
 
 	/*

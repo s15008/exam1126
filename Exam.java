@@ -26,7 +26,8 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-
+          for (int i = count; i >= 100; i--)
+          System.out.println(i);
 	}
 
 	/*

@@ -57,7 +57,9 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
-		return iDummy;
+
+		return Math.max(x,y);
+
 	}
 
 	/*

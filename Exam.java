@@ -16,6 +16,11 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
+          
+          while(true){
+              System.out.println(count);
+              count++;
+          }
  
 	}
 
@@ -25,7 +30,12 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-
+          for(int i = count; i < 0 -1; i--){
+            System.out.println(count);
+            if(count == 0){
+              break;
+            }
+          }
 	}
 
 	/*
@@ -34,7 +44,12 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-		return bDummy;
+          if(x > 0){
+            return true;
+          } else{
+            return false;
+          }
+		
 	}
 
 	/*
@@ -43,7 +58,8 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
-		return iDummy;
+          
+	  return Math.max(x, y);
 	}
 
 	/*
@@ -52,7 +68,8 @@ public class Exam {
 	*/
 
 	int sum(int x,int y) {
-		return iDummy;
+          return (x+y);
+	      
 	}
 
 	/*
@@ -61,7 +78,8 @@ public class Exam {
 	*/
 
 	double average (int x,int y,int z) {
-		return dDummy;
+          double average = (x + y + z)/3;
+		return average;
 	}
 
 	/*
@@ -70,7 +88,15 @@ public class Exam {
 	*/
 
 	char rank (int score) {
-		return cDummy;
+          if(score > 89){
+            return rank;
+          } else if(score > 69 && score < 90){
+            return rank;
+          } else if(score > 44 && score < 70){
+            return rank;
+          } else{
+            return rank;
+          }
 	}
 
 	/*
@@ -79,7 +105,8 @@ public class Exam {
 	*/
 
 	int getRectArea (int width, int height) {
-		return iDummy;
+          int answer = width * height;
+		return answer;
 	}
 
 	/*
@@ -88,7 +115,9 @@ public class Exam {
 	*/
 
 	double getTriangleArea (int x,int y,int z) {
-		return dDummy;
+	  double s = (x + y + z)/2;
+          double answer = Math.sqrt(s*(s-x)*(s-y)*(s-z));
+          return answer;
 	}
 
 	/*
@@ -97,8 +126,9 @@ public class Exam {
 	BMI＝体重（kg）÷（身長（m）×身長（m））
 	*/
 
-	double calcBMI (int x,int y,int z) {
-		return dDummy;
+	double calcBMI (int width,int height) {
+	  double bmi = width / (height * height);	
+          return bmi;
 	}
 
 	/*
@@ -107,6 +137,8 @@ public class Exam {
 	*/
 
 	int getRandom (int min,int max) {
+
+          
 		return iDummy;
 	}
 

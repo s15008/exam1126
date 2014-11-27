@@ -83,18 +83,6 @@ public class Exam {
 	char rank (int score) {
           if ((score >= 0) && (score <= 100)){
             if (score >= 90){
-              return "A";
-            }else if (score >= 70){
-              return "B"; 
-            }else if (score >= 45){
-              return "C";
-            }else {
-              return "D";
-            }
-          
-          }
-	}
-
               return 'A';
             }if (score >= 70){
               return 'B'; 
@@ -102,17 +90,15 @@ public class Exam {
               return 'C';
             }
              
-            }
-              return 'D';
 	   }
-      
+              return 'D';
+	}
 	/*
 	問8 intの引数 width,height を 受け取り 四角形の面積を返す
 	メソッド getRectAreaを定義せよ
 	*/
 
         
-	}
         int getRectArea (int width, int height) {
                 return ((width * 2) / height);        
         

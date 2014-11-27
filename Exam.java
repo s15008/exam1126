@@ -16,7 +16,11 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
- 
+            int i = 0;
+            while(i < count){
+              i++;
+              System.out.println(i) ;
+            }
 	}
 
 	/*
@@ -25,8 +29,11 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-
-	}
+	  for(int i = 0; count > i;count--){
+            System.out.println(count);
+          }
+        
+        }
 
 	/*
 	問3 intの引数 x を 受け取り，正のであればtrue,負であればfalseを返す
@@ -34,16 +41,19 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-		return bDummy;
-	}
-
+	    if ( x >= 0){
+              return true;
+	    }else{
+              return false;
+            }
+        }
 	/*
 	問4 intの引数 x,y を 受け取り数字が大きい方を返す
 	メソッド max を定義せよ。
 	*/
 
 	int max(int x,int y) {
-		return iDummy;
+		return Math.max(x,y);
 	}
 
 	/*
@@ -52,7 +62,7 @@ public class Exam {
 	*/
 
 	int sum(int x,int y) {
-		return iDummy;
+		return (x + y);
 	}
 
 	/*
@@ -61,7 +71,8 @@ public class Exam {
 	*/
 
 	double average (int x,int y,int z) {
-		return dDummy;
+                double ave = (x + y + z) / 2;
+		return ave;
 	}
 
 	/*
@@ -70,17 +81,28 @@ public class Exam {
 	*/
 
 	char rank (int score) {
-		return cDummy;
+          if ((score >= 0) && (score <= 100)){
+            if (score >= 90){
+              return "A";
+            }else if (score >= 70){
+              return "B"; 
+            }else if (score >= 45){
+              return "C";
+            }else {
+              return "D";
+            }
+          
+          }
 	}
 
 	/*
 	問8 intの引数 width,height を 受け取り 四角形の面積を返す
 	メソッド getRectAreaを定義せよ
 	*/
-
-	int getRectArea (int width, int height) {
-		return iDummy;
-	}
+        int getRectArea (int width, int height) {
+                return ((width * 2) / height);        
+        
+        }
 
 	/*
 	問9 三角形の辺の長さ x,y,z を 受け取り 三角形の面積を返す

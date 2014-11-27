@@ -67,7 +67,7 @@ public class Exam {
 	*/
 
 	int sum(int x,int y) {
-		
+	  return (x + y);
 	}
 
 	/*
@@ -85,7 +85,16 @@ public class Exam {
 	*/
 
 	char rank (int score) {
-		return cDummy;
+    if( 90 < score){
+        return ('A');
+    }else if(70 < score && score < 90){
+        return ('B');
+    }else if( 45 < score && score < 70){
+        return ('C');
+    }else{
+        return ('D');
+    }
+		
 	}
 
 	/*
@@ -94,7 +103,7 @@ public class Exam {
 	*/
 
 	int getRectArea (int width, int height) {
-		return iDummy;
+		return ( width * height);
 	}
 
 	/*
@@ -103,7 +112,11 @@ public class Exam {
 	*/
 
 	double getTriangleArea (int x,int y,int z) {
-		return dDummy;
+    int i = ((x + y + z) / 2);
+
+    return (Math.sqrt((i*(i-x))*(i*(i-y))*(i*(i-z))));
+
+
 	}
 
 	/*
@@ -112,8 +125,8 @@ public class Exam {
 	BMI＝体重（kg）÷（身長（m）×身長（m））
 	*/
 
-	double calcBMI (int x,int y,int z) {
-		return dDummy;
+	double calcBMI (int weight,int height){
+		return (weight +(height*2));
 	}
 
 	/*

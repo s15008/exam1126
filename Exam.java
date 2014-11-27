@@ -16,7 +16,10 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
- 
+        while(count >= 0){
+        count++;
+        
+        }
 	}
 
 	/*
@@ -25,7 +28,9 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-
+        for(;count >= 0;){
+        count--;
+        }
 	}
 
 	/*

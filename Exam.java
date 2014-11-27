@@ -90,7 +90,17 @@ public class Exam {
 	*/
 
 	char rank (int score) {
-		return cDummy;
+
+		if(score > 90){
+			System.out.print("A");
+		}else if(score > 70){
+			System.out.print("B");
+		}else if(score > 45){
+			System.out.print("C");
+		}else{
+			System.out.print("D");
+		}
+
 	}
 
 	/*

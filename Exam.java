@@ -178,6 +178,8 @@ public class Exam {
         String y = stdIn.next();
 
         System.out.println("こんにちわ" + (x + y) + "さん。");
+
+        //名前を入力させて　その名前を返すプログラム
 	}
 
 }

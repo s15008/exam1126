@@ -152,9 +152,9 @@ public class Exam {
 
 	int getRandom (int min,int max) {
 
+		i = Math.random(min,max);
 
-
-		return iDummy;
+		return i;
 	}
 
 	/*
@@ -163,7 +163,21 @@ public class Exam {
 	*/
 
 	int[] descSort(int[] array) {
-		return iaDummy;
+
+		for(i;i < array.length;i++){
+			for(int j = array.length;j>i;j--){
+				
+				if(array[j]>array[j-1]){
+					int t = a[j];
+					a[j] = a[j-1];
+					a[j-1] = t;
+				}
+
+			}
+		}
+
+
+		return array;
 	}
 
 	/*

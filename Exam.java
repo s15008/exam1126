@@ -14,7 +14,6 @@ public class Exam {
 	メソッド countUp を定義せよ。但しwhileを用いること。
 	*/
 	void countUp(int count) {
-        Scanner stdIn = new Scanner(System.in);
         int i = 0;
         while (i <= count){
             i = i++;
@@ -28,7 +27,6 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-        Scanner stdIn = new Scanner(System.in);
         for (int i = 0; i <= count; i++){
             System.out.println(i);
         }
@@ -40,7 +38,6 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-        Scanner stdIn = new Scanner(System.in);
         if (x < 0){
             return false;
         }else{
@@ -54,7 +51,8 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
-		return iDummy;
+        int a = Math.max(x,y);
+        return a;
 	}
 
 	/*
@@ -62,8 +60,8 @@ public class Exam {
 	メソッド sum を定義せよ。
 	*/
 
-	int sum(int x,int y) {
-		return iDummy;
+	int sum(int x,int y) { 
+		return x+y;
 	}
 
 	/*
@@ -72,7 +70,7 @@ public class Exam {
 	*/
 
 	double average (int x,int y,int z) {
-		return dDummy;
+
 	}
 
 	/*

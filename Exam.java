@@ -43,9 +43,9 @@ public class Exam {
     boolean positive(int x) {
 
         if (0 > x){
-        return bDummy;
+        return false;
         }else{
-        return bDummy;
+        return true;
         }
     }
 
@@ -132,7 +132,9 @@ public class Exam {
        */
 
     int getRandom (int min,int max) {
-        return iDummy;
+        Random rand = new Random();
+        int x = rand.nextInt(max) - min;
+        return x;
     }
 
     /*

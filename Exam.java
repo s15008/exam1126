@@ -2,7 +2,6 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Exam {
-
 	int iDummy = 0;
 	char cDummy = 'a';
 	boolean bDummy = false;
@@ -14,9 +13,13 @@ public class Exam {
 	問1 引数 count を受け取り,0からcountまで1づつ増加して表示する
 	メソッド countUp を定義せよ。但しwhileを用いること。
 	*/
-	
+
 	void countUp(int count) {
- 
+        int i=0;
+        while(i <= count){
+            i++;
+        }
+        System.out.println(i);
 	}
 
 	/*
@@ -24,8 +27,10 @@ public class Exam {
 	メソッド countDown を定義せよ。但しforを用いること。
 	*/
 
-	void countDown(int count) {
-
+	void countDown(int count){
+        for (int i=count; i < 0; i--){
+            System.out.println(i);
+        }
 	}
 
 	/*
@@ -34,7 +39,11 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
+        if (x > 0){
+        return true;
+        }else{
 		return bDummy;
+        }
 	}
 
 	/*
@@ -43,7 +52,11 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
-		return iDummy;
+        if (x > y){
+            return x;
+        }else{
+            return y;
+        }
 	}
 
 	/*
@@ -52,7 +65,7 @@ public class Exam {
 	*/
 
 	int sum(int x,int y) {
-		return iDummy;
+        return (x + y);
 	}
 
 	/*
@@ -61,8 +74,9 @@ public class Exam {
 	*/
 
 	double average (int x,int y,int z) {
-		return dDummy;
-	}
+       double i = ((x+y+z)/3);
+       return i;
+    }
 
 	/*
 	問7 intの引数 score を 受け取り 成績を返す メソッド rank を定義せよ。
@@ -70,7 +84,15 @@ public class Exam {
 	*/
 
 	char rank (int score) {
-		return cDummy;
+        if(score >= 90){
+            return 'A';
+        }else if (score >= 70){
+            return 'B';
+        }else if (score >= 45){
+            return 'C';
+        }else{
+            return 'D';
+        }
 	}
 
 	/*
@@ -79,7 +101,7 @@ public class Exam {
 	*/
 
 	int getRectArea (int width, int height) {
-		return iDummy;
+        return (width * height);
 	}
 
 	/*
@@ -88,7 +110,7 @@ public class Exam {
 	*/
 
 	double getTriangleArea (int x,int y,int z) {
-		return dDummy;
+        int s = ((x + y + z)/2);
 	}
 
 	/*
@@ -120,7 +142,7 @@ public class Exam {
 	}
 
 	/*
-	問13 int型の引数 x を受け取り 
+	問13 int型の引数 x を受け取り
 	3 で割り切れるならばFizz
 	5 で割り切れるなら Buzz
 	3 でも 5 でも割り切れる場合は，FizzBuzz
@@ -149,5 +171,4 @@ public class Exam {
 	void execute() {
 
 	}
-
 }

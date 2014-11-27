@@ -14,9 +14,13 @@ public class Exam {
 	問1 引数 count を受け取り,0からcountまで1づつ増加して表示する
 	メソッド countUp を定義せよ。但しwhileを用いること。
 	*/
-	
+
 	void countUp(int count) {
- 
+
+        while(count <5){
+            System.out.println(count);
+            count++;
+        }
 	}
 
 	/*
@@ -25,7 +29,8 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-
+        for(count = 5; count <= 1; count--)
+            System.out.println(count);
 	}
 
 	/*
@@ -34,6 +39,7 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
+
 		return bDummy;
 	}
 
@@ -120,7 +126,7 @@ public class Exam {
 	}
 
 	/*
-	問13 int型の引数 x を受け取り 
+	問13 int型の引数 x を受け取り
 	3 で割り切れるならばFizz
 	5 で割り切れるなら Buzz
 	3 でも 5 でも割り切れる場合は，FizzBuzz
@@ -147,7 +153,17 @@ public class Exam {
 	*/
 
 	void execute() {
+        Scanner stdIn = new Scanner(System.in);
 
+        System.out.println("名前を入力して下さい");
+
+        System.out.print("性：");
+        String x = stdIn.next();
+
+        System.out.print("名：");
+        String y = stdIn.next();
+
+        System.out.println("こんにちわ" + (x + y) + "さん。");
 	}
 
 }

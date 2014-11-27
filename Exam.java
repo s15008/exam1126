@@ -128,7 +128,8 @@ public class Exam {
 		z = (s-z);
 
 		int S = x * y * z;
-		return Math.spor(S);
+		return Math.sqrt(S);
+
 	}
 
 	/*
@@ -150,6 +151,9 @@ public class Exam {
 	*/
 
 	int getRandom (int min,int max) {
+
+
+
 		return iDummy;
 	}
 

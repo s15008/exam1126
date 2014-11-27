@@ -173,7 +173,8 @@ public class Exam {
 	*/
 
 	void execute() {
-
+          return ("Hello" + "World");
+          //Hello と world の結合
 	}
 
 }

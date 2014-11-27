@@ -30,6 +30,10 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
+		
+		for(i = 0;count > -1;i++){
+			System.out.println(count-i);
+		}
 
 	}
 

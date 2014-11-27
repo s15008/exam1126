@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Exam {
 
-	int iDummy = 0;
+	int i = 0;
 	char cDummy = 'a';
 	boolean bDummy = false;
 	double dDummy = 0.0d;
@@ -16,7 +16,12 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
- 
+ 		
+		while(i <= count){
+			System.out.println(i);
+			i++;
+		}
+
 	}
 
 	/*

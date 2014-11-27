@@ -151,7 +151,18 @@ public class Exam {
 	*/
 
 	String FizzBuzz(int x) {
-		return sDummy;
+          Scanner stdin = new Scanner(System.in);
+          x = stdin.nextInt();
+
+          if ( x % 3 == 0){
+            return "Fizz";
+          }else if (x % 5 == 0){
+            return "Buzz";
+          }else if (x % 3 == 0 && x % 5 == 0){
+            return "FizzBuzz";
+          }else{
+            return "５でも３でも割り切れません";
+          }
 	}
 
 	/*

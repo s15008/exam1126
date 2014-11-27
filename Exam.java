@@ -16,8 +16,6 @@ public class Exam {
 	*/
 
 	void countUp(int count) {
-      public static void main(String[] args) {
-        int i = 0;
 
       while (i < count){
 
@@ -26,6 +24,7 @@ public class Exam {
       System.out.println(i);
       }
 	}
+}
 
 	/*
 	問2 引数 count を受け取り,countから0まで1づつ減少して表示する
@@ -33,8 +32,11 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-
-	}
+        for(int i = count; i > 0; i--) {
+          System.out.println("i = " + i);
+        }
+    }
+}
 
 	/*
 	問3 intの引数 x を 受け取り，正のであればtrue,負であればfalseを返す
@@ -42,8 +44,7 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-		return bDummy;
-	}
+		int = x;
 
 	/*
 	問4 intの引数 x,y を 受け取り数字が大きい方を返す
@@ -51,8 +52,8 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
-		return iDummy;
-	}
+
+    }
 
 	/*
 	問5 intの引数 x,y を 受け取り合計を返す
@@ -96,8 +97,9 @@ public class Exam {
 	*/
 
 	double getTriangleArea (int x,int y,int z) {
-		return dDummy;
-	}
+		double
+        double s = (x + y + z) / 2;
+    }
 
 	/*
 	問10 height(cm),weight(kg)を受け取り そのBMI値を返す

@@ -39,8 +39,12 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-		return bDummy;
-	}
+	if(x >= 0){
+          return true;
+        }else{
+          return false;
+        }
+        }
 
 	/*
 	問4 intの引数 x,y を 受け取り数字が大きい方を返す

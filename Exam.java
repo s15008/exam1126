@@ -7,7 +7,7 @@ public class Exam {
 	char cDummy = 'a';
 	boolean b = false;
 	double dDummy = 0.0d;
-	String sDummy = "";
+	String message = "";
 	int [] iaDummy = new int [0];
 
 	/*
@@ -164,7 +164,7 @@ public class Exam {
 
 	int[] descSort(int[] array) {
 
-		for(i;i < array.length;i++){
+		for(i = 0;i < array.length;i++){
 			for(int j = array.length;j>i;j--){
 				
 				if(array[j]>array[j-1]){
@@ -190,7 +190,16 @@ public class Exam {
 	*/
 
 	String FizzBuzz(int x) {
-		return sDummy;
+
+		if(x % 3 ===0){
+			message += "Fizz";
+		}
+
+		if(x % 5 ===0){
+			message += "Buzz";
+		}
+
+		return message;
 	}
 
 	/*

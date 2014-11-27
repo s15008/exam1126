@@ -120,7 +120,13 @@ public class Exam {
 	*/
 
 	double calcBMI (int weight,int heigth) {
-		return dDummy;
+          Scanner stdin = new Scanner(System.in);
+          System.out.print("体重(kg):");
+          weight = stdin.nextInt();
+          System.out.print("身長(m):");
+          heigth = stdin.nextInt();
+
+          return (weight / ((heigth) * (heigth)));
 	}
 
 	/*

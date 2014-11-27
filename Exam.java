@@ -65,15 +65,19 @@ public class Exam {
      */
 
   int max(int x,int y) {
-    Scanner stdIn = new Scanner(Syste.in);
-    
+    Scanner stdIn = new Scanner(System.in);
+
     System.out.print("数値を入力してください(1):");
     x = stdIn.nextInt();
 
     System.out.print("数値を入力してください(2):");
     y = stdIn.nextInt();
 
-    return Math.abs(x,y);
+    if(x > y) {
+      return x;
+    }else {
+      return y;
+    }
   }
 
   /*
@@ -82,15 +86,15 @@ public class Exam {
      */
 
   int sum(int x,int y) {
-      Scanner stdIn = new Scanner(Systeme.in);
-    
-      System.out.print("値を入力して下さい(1):");
-      x = stdIn.nextInt();
+    Scanner stdIn = new Scanner(System.in);
 
-      System.out.print("値を入力して下さい(2):");
-      y = stdIn.nextInt();
+    System.out.print("値を入力して下さい(1):");
+    x = stdIn.nextInt();
 
-      int Sum = (x + y);
+    System.out.print("値を入力して下さい(2):");
+    y = stdIn.nextInt();
+
+    int Sum = (x + y);
     return Sum;
   }
 
@@ -101,7 +105,7 @@ public class Exam {
 
   double average (int x,int y,int z) {
     Scanner stdIn = new Scanner(System.in);
-    
+
     System.out.print("値を入力して下さい(1):");
     x = stdIn.nextInt();
 
@@ -111,7 +115,7 @@ public class Exam {
     System.out.print("値を入力して下さい(3):");
     z = stdIn.nextInt();
 
-    double Average(x + y + z )/3;
+    double Average = (x + y + z )/3;
     return Average;
   }
 
@@ -122,7 +126,7 @@ public class Exam {
 
   char rank (int score) {
     Scanner stdIn = new Scanner(System.in);
-    
+
     System.out.print("点数を入力して下さい:");
     score = stdIn.nextInt();
 
@@ -130,7 +134,7 @@ public class Exam {
       if(score > 89) {
         return A;
       }else if(score > 69) {
-        return B
+        return B;
       }else  {
         return C;
       }
@@ -175,8 +179,19 @@ public class Exam {
      BMI＝体重（kg）÷（身長（m）×身長（m））
      */
 
-  double calcBMI (int x,int y,int z) {
-      }
+  double calcBMI (int height,int weight) {
+    Scanner stdIn =new Scanner(System.in);
+
+    System.out.print("身長を入力して下さい:");
+    height = stdIn.nextInt();
+
+    System.out.print("体重を入力して下さい:");
+    weight = stdIn.nextInt();
+
+    int BMI = (x * x)/y;
+      return "BMIは" + BMI;
+
+  }
 
   /*
      問11 最小値 min, 最大値 max を受け取りその範囲のランダムな数を返す
@@ -184,6 +199,7 @@ public class Exam {
      */
 
   int getRandom (int min,int max) {
+        
     return iDummy;
   }
 

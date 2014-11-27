@@ -9,7 +9,7 @@ public class Exam {
 	double dDummy = 0.0d;
 	String sDummy = "";
 	int [] iaDummy = new int [0];
-     Exam count=new Exam();
+
      /*
 	問1 引数 count を受け取り,0からcountまで1づつ増加して表示する
 	メソッド countUp を定義せよ。但しwhileを用いること。
@@ -29,7 +29,9 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-
+     for(int i=count;count<0-1;i--){
+        System.out.println(i);
+     }
 	}
 
 	/*

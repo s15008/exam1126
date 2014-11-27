@@ -70,7 +70,7 @@ public class Exam {
 	*/
 
 	double average (int x,int y,int z) {
-	double a = x+y+z/3;
+	double a = (x+y+z)/3;
 	return a;
         }
 
@@ -80,8 +80,18 @@ public class Exam {
 	*/
 
 	char rank (int score) {
-		return cDummy;
-	}
+	/*
+        if(score >= 90){
+        return A;
+        }else if(score >= 70 && score >= 89){
+        return "B";
+        }else if(score >= 45 && score >= 70){
+        return "C";
+        }else{
+        return "D";
+        }*/
+	return "hDummy" ;
+        }
 
 	/*
 	問8 intの引数 width,height を 受け取り 四角形の面積を返す
@@ -89,7 +99,8 @@ public class Exam {
 	*/
 
 	int getRectArea (int width, int height) {
-		return iDummy;
+	int a = width*height;
+        return a;
 	}
 
 	/*
@@ -98,8 +109,10 @@ public class Exam {
 	*/
 
 	double getTriangleArea (int x,int y,int z) {
-		return dDummy;
-	}
+	double a = (x + y + z)/2;
+        double b = Math.sqrt(a*(a-x)*(a-y)*(a-z));
+	return b;
+        }
 
 	/*
 	問10 height(cm),weight(kg)を受け取り そのBMI値を返す
@@ -107,27 +120,39 @@ public class Exam {
 	BMI＝体重（kg）÷（身長（m）×身長（m））
 	*/
 
-	double calcBMI (int x,int y,int z) {
-		return dDummy;
+	double calcBMI (int height,int weight) {
+	double a = weight/(height*height);
+        return a;
 	}
 
 	/*
 	問11 最小値 min, 最大値 max を受け取りその範囲のランダムな数を返す
 	メソッド getRandom を定義せよ。
 	*/
-
+        /*
 	int getRandom (int min,int max) {
-		return iDummy;
-	}
-
+        int a = Math.random();	
+          return daDummy;
+	}*/
+              
 	/*
 	問12 int型の配列arrayを引数でとり，その配列の要素を降順(大きい順)でソートして返す
 	メソッド descSortを定義せよ
 	*/
 
 	int[] descSort(int[] array) {
-		return iaDummy;
-	}
+	for(int i =0; i<array.length-1; i++){
+        for(int j =0; j<array.length; j++){
+        if(array[j]>array[i]){
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+        }
+        }
+        }	
+          return array;
+	
+        }
 
 	/*
 	問13 int型の引数 x を受け取り 

@@ -17,12 +17,15 @@ public class Exam {
 	
 	void countUp(int count) {
 
-          for (i = 0; i < count; i++){
-             return count;
+          int i = 0;
+
+          while (i < count){
+            System.out.println(i);
+             i++;
+          }
 
           }
  
-	}
 
 	/*
 	問2 引数 count を受け取り,countから0まで1づつ減少して表示する
@@ -30,6 +33,7 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
+
 
 	}
 

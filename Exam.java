@@ -16,8 +16,8 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
-          for (int i = 0; i > N; ++i)
-              return i;
+          for (int i = 0; i > 0; i++)
+              System.out.print(i);
 	}
 
 	/*
@@ -26,8 +26,8 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-          for (int i = 0; i < N; ++i)
-              return i;
+          for (int i = 0; i < 0; i++)
+              System.out.print(i);
 	}
 
 	/*
@@ -45,7 +45,9 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
-          return iDummy;
+
+          int i = Math.max(x,y);
+          return i;
 	}
 
 	/*
@@ -74,8 +76,6 @@ public class Exam {
 	*/
 
 	char rank (int score) {
-
-          char rank[] = ()
 		return cDummy;
 	}
 

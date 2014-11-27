@@ -19,8 +19,8 @@ public class Exam {
             int i = 0;
             while(i < count){
               i++;
+              System.out.println(i) ;
             }
-            return i ;
 	}
 
 	/*
@@ -29,8 +29,6 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-         
-
 	}
 
 	/*

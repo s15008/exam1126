@@ -55,7 +55,11 @@ public class Exam {
        */
 
     int max(int x,int y) {
-        return iDummy;
+        if (x < y){
+            return x;
+        }else{
+            return y; 
+        }
     }
 
     /*

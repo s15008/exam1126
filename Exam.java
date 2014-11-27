@@ -53,14 +53,15 @@ public class Exam {
 
 	int max(int x,int y) {
         return Math.max(x,y);
-
+        }
 	/*
 	問5 intの引数 x,y を 受け取り合計を返す
 	メソッド sum を定義せよ。
 	*/
 
 	int sum(int x,int y) {
-		return iDummy;
+	int a = x+y;
+        return a;
 	}
 
 	/*
@@ -69,8 +70,9 @@ public class Exam {
 	*/
 
 	double average (int x,int y,int z) {
-		return dDummy;
-	}
+	double a = x+y+z/3;
+	return a;
+        }
 
 	/*
 	問7 intの引数 score を 受け取り 成績を返す メソッド rank を定義せよ。

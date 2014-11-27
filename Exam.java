@@ -22,12 +22,13 @@ public class Exam {
     count = stdIn.nextInt();
 
     while(true){
-      for(int i = 0;i > count;i++);
+      for(int i = 0;i > count;i++){
 
-      if(i > count) {
-        break;
+        if(i > count) {
+          break;
+        }
+        i += count;
       }
-      i += count;
     }
     System.out.println(count);
   }
@@ -38,7 +39,15 @@ public class Exam {
      */
 
   void countDown(int count) {
+    Scanner stdIn = new Scanner(System.in);
 
+    System.out.print("数字を入力して下さい:");
+    count = stdIn.nextInt();
+
+    for(int i = count;i > -1;i--) {
+      i -= count;
+    }
+    System.out.println(count);
   }
 
   /*
@@ -132,14 +141,14 @@ public class Exam {
 
     if(score < 45) {
       if(score > 89) {
-        return A;
+        return "A";
       }else if(score > 69) {
-        return B;
+        return "B";
       }else  {
-        return C;
+        return "C";
       }
     }else {
-      return D;
+      return "D";
     }
   }
 
@@ -170,7 +179,7 @@ public class Exam {
     z = stdIn.nextInt();
 
     int s = (x + y + z)/2;
-    return "三角形の面積は" + Math.abs(s * (s - x) * (s - y) * (s - z)) + "です。";
+    return  Math.abs(s * (s - x) * (s - y) * (s - z));
   }
 
   /*
@@ -188,8 +197,8 @@ public class Exam {
     System.out.print("体重を入力して下さい:");
     weight = stdIn.nextInt();
 
-    int BMI = (x * x)/y;
-      return "BMIは" + BMI;
+    int BMI = (height * height)/weight;
+    return  BMI;
 
   }
 
@@ -199,7 +208,7 @@ public class Exam {
      */
 
   int getRandom (int min,int max) {
-        
+
     return iDummy;
   }
 
@@ -222,7 +231,20 @@ public class Exam {
      */
 
   String FizzBuzz(int x) {
-    return sDummy;
+    Scanner stdIn = new Scanner(System.in);
+
+    System.out.print("数字を入力して下さい:");
+    x = stdIn.nextInt();
+
+    if(x % 3 == 0 && x % 5 == 0) {
+      return "FizzBuzz";
+    } else if(x % 3 == 0) {
+      return "Fizz";
+    } else if(x % 5 == 0) {
+      return "Buzz";
+    } else {
+      return sDummy;
+    }
   }
 
   /*

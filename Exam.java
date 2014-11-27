@@ -17,7 +17,7 @@ public class Exam {
 
 	void countUp(int count) {
 
-        while(count <5){
+        while(0 < count){
             System.out.println(count);
             count++;
         }
@@ -39,8 +39,13 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-
-		return bDummy;
+        if(0 < x){
+            System.out.println("true");
+            return;
+        }else{
+            System.out.println("false");
+            return;
+        }
 	}
 
 	/*
@@ -58,7 +63,8 @@ public class Exam {
 	*/
 
 	int sum(int x,int y) {
-		return iDummy;
+		int sum = x + y;
+        return sum;
 	}
 
 	/*
@@ -76,7 +82,15 @@ public class Exam {
 	*/
 
 	char rank (int score) {
-		return cDummy;
+        if(90 < score){
+            return "A";
+        }else if(70 < score && 90 < score){
+            return "B";
+        }else if(45 < score && score < 70){
+            return "C";
+        }else{
+            return "D";
+        }
 	}
 
 	/*

@@ -5,7 +5,7 @@ public class Exam {
 
 	int i = 0;
 	char cDummy = 'a';
-	boolean bDummy = false;
+	boolean b = false;
 	double dDummy = 0.0d;
 	String sDummy = "";
 	int [] iaDummy = new int [0];
@@ -43,7 +43,12 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-		return bDummy;
+
+		if(x > 0){
+			return !b;
+		}else{
+			return b;
+		}
 	}
 
 	/*

@@ -43,7 +43,7 @@ public class Exam {
         if(x>0){
          return true;
         }else{
-         return bDummy;
+         return false;
         }
 	}
 
@@ -53,8 +53,12 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
-		return iDummy;
-	}
+	  if(x>y){
+       return x;
+        }else{
+        return y;
+      }
+    }
 
 	/*
 	問5 intの引数 x,y を 受け取り合計を返す

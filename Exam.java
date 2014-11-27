@@ -16,7 +16,11 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
- 
+          int count = 9;
+          for(count <= 0) {
+
+            count--;
+          }
 	}
 
 	/*
@@ -26,6 +30,7 @@ public class Exam {
 
 	void countDown(int count) {
 
+
 	}
 
 	/*
@@ -34,7 +39,16 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-		return bDummy;
+          Scanner scan = new Scanner(System.in);
+          System.out.print("２つの整数を入力");
+
+          int x = scan.nextInt();
+          int y = scan.nextInt();
+
+          int m = Math.max(x,y);
+          int max_num = Math.max(m);
+	  
+          System.out.println("最大値は" + max_num);
 	}
 
 	/*
@@ -43,8 +57,10 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
+          void execute(){
 		return iDummy;
-	}
+          } 
+        }
 
 	/*
 	問5 intの引数 x,y を 受け取り合計を返す
@@ -52,7 +68,19 @@ public class Exam {
 	*/
 
 	int sum(int x,int y) {
-		return iDummy;
+          Scanner acan = new Scanner(System.in);
+          int x = scan.nextInt();
+          int y = scan.nextInt();
+          double[] number = new double[x,y];
+          if(number.length > 0){
+            for(int i = 0; i < number.length; i++){
+              System.out.print("値を入力してください");
+              double num = scan.nexDouble();
+              number[i] = num;
+              sum +=number[i];
+            } 
+            System.out.println(sum / number.length);
+          }
 	}
 
 	/*

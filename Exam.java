@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
-
+import java.util.Arrays;
 public class Exam {
 
 	int iDummy = 0;
@@ -95,6 +95,17 @@ public class Exam {
           }
 	}
 
+              return 'A';
+            }if (score >= 70){
+              return 'B'; 
+            }if (score >= 45){
+              return 'C';
+            }
+             
+            }
+              return 'D';
+	   }
+      
 	/*
 	問8 intの引数 width,height を 受け取り 四角形の面積を返す
 	メソッド getRectAreaを定義せよ
@@ -102,6 +113,10 @@ public class Exam {
 
         
 	}
+        int getRectArea (int width, int height) {
+                return ((width * 2) / height);        
+        
+        }
 
 	/*
 	問9 三角形の辺の長さ x,y,z を 受け取り 三角形の面積を返す
@@ -109,7 +124,8 @@ public class Exam {
 	*/
 
 	double getTriangleArea (int x,int y,int z) {
-		return dDummy;
+	      double s = (x + y + z) /2;
+              return Math.sqrt(s * (s-x) * (s-y) * (s-z));
 	}
 
 	/*
@@ -118,8 +134,8 @@ public class Exam {
 	BMI＝体重（kg）÷（身長（m）×身長（m））
 	*/
 
-	double calcBMI (int x,int y,int z) {
-		return dDummy;
+	double calcBMI (double weight,double height) {
+		return (weight /(height * 2));
 	}
 
 	/*
@@ -128,7 +144,11 @@ public class Exam {
 	*/
 
 	int getRandom (int min,int max) {
-		return iDummy;
+                Random rnd = new Random();
+                int a = Math.abs(min - max);
+                int rndm = rnd.nextInt(a);
+
+		return rndm;
 	}
 
 	/*
@@ -137,7 +157,14 @@ public class Exam {
 	*/
 
 	int[] descSort(int[] array) {
-		return iaDummy;
+             Arrays.sort(array);
+             int size = array.length;
+             int[] b = new int[size];
+
+             for (int i = 0; size > 0;i++){
+                b[i] = array[--size];
+             }
+             return b;
 	}
 
 	/*
@@ -168,7 +195,6 @@ public class Exam {
 	*/
 
 	void execute() {
-
 	}
 
 }

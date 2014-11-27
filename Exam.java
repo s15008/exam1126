@@ -16,6 +16,7 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
+          Scanner 
  
 	}
 
@@ -46,6 +47,8 @@ public class Exam {
 		return iDummy;
 	}
 
+        
+
 	/*
 	問5 intの引数 x,y を 受け取り合計を返す
 	メソッド sum を定義せよ。
@@ -54,6 +57,9 @@ public class Exam {
 	int sum(int x,int y) {
 		return iDummy;
 	}
+          
+
+          
 
 	/*
 	問6 intの引数 x,y,z を 受け取り doubleで 平均を返す

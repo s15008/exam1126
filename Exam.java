@@ -16,7 +16,11 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
- 
+          int i = 0;
+          while(count == i){
+            i ++;
+          
+          }
 	}
 
 	/*

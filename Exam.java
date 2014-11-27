@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
-
+import java.util.Arrays;
 public class Exam {
 
 	int iDummy = 0;
@@ -84,16 +84,16 @@ public class Exam {
           if ((score >= 0) && (score <= 100)){
             if (score >= 90){
               return 'A';
-            }else if (score >= 70){
+            }if (score >= 70){
               return 'B'; 
-            }else if (score >= 45){
+            }if (score >= 45){
               return 'C';
-            }else {
-              return 'D'; 
             }
-	   }
+             
+            }
               return 'D';
-        }
+	   }
+      
 	/*
 	問8 intの引数 width,height を 受け取り 四角形の面積を返す
 	メソッド getRectAreaを定義せよ
@@ -142,7 +142,14 @@ public class Exam {
 	*/
 
 	int[] descSort(int[] array) {
-		return iaDummy;
+             Arrays.sort(array);
+             int size = array.length;
+             int[] b = new int[size];
+
+             for (int i = 0; size > 0;i++){
+                b[i] = array[--size];
+             }
+             return b;
 	}
 
 	/*
@@ -173,8 +180,5 @@ public class Exam {
 	*/
 
 	void execute() {
-          return ("Hello" + "World");
-          //Hello と world の結合
 	}
-
 }

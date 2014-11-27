@@ -3,11 +3,14 @@ import java.util.Random;
 
 public class Exam {
 
-	int iDummy = 0;
+	int count= 0;
 	char cDummy = 'a';
 	boolean bDummy = false;
 	double dDummy = 0.0d;
-	String sDummy = "";
+        int height = 169;
+        int weight = 60;
+	String nfb = "NotFizzBuzz";
+        int x =10;
 	int [] iaDummy = new int [0];
 
 	/*
@@ -16,7 +19,7 @@ public class Exam {
 	*/
 	
 	void countUp(int count) {
- 
+          
 	}
 
 	/*
@@ -25,6 +28,10 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
+         int v = count;
+         for(int i = count; i >0;i--){
+          System.out.println(i);
+         }
 
 	}
 
@@ -34,25 +41,29 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-		return bDummy;
-	}
+	  
+          if(x>0){
+            return true;
+          }else {
+            return false;
+	 }
+        }
 
 	/*
 	問4 intの引数 x,y を 受け取り数字が大きい方を返す
 	メソッド max を定義せよ。
 	*/
 
-	int max(int x,int y) {
-		return iDummy;
-	}
-
+	int max(int x,int y){ 
+        System.out.println(Math.max(x,y));  
+        }
 	/*
 	問5 intの引数 x,y を 受け取り合計を返す
 	メソッド sum を定義せよ。
 	*/
 
 	int sum(int x,int y) {
-		return iDummy;
+		return x+y;
 	}
 
 	/*
@@ -97,8 +108,9 @@ public class Exam {
 	BMI＝体重（kg）÷（身長（m）×身長（m））
 	*/
 
-	double calcBMI (int x,int y,int z) {
-		return dDummy;
+	double calcBMI (int height,int weight) {
+		
+          System.out.println(weight /(height * 2));
 	}
 
 	/*
@@ -107,7 +119,7 @@ public class Exam {
 	*/
 
 	int getRandom (int min,int max) {
-		return iDummy;
+          
 	}
 
 	/*
@@ -129,8 +141,14 @@ public class Exam {
 	*/
 
 	String FizzBuzz(int x) {
-		return sDummy;
-	}
+	if(x%3 == 0){
+        return "Fizz";
+        }else if(x%5 == 0){
+        return "Buzz";
+        }else if(x%3 ==0 && x%5 == 0){
+        return "FizzBuzz";}
+        else{return nfb;}
+        }
 
 	/*
 	問14 掛け算九九表を出力するメソッドTimesTableを作成せよ

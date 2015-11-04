@@ -28,7 +28,9 @@ public class Exam {
 	*/
 
 	void countDown(int count) {
-
+        for ( int i=count; i > 0-1; i--) {
+            System.out.println( i);
+        }
 	}
 
 	/*
@@ -37,7 +39,6 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
-		return bDummy;
 	}
 
 	/*

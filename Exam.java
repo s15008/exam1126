@@ -39,6 +39,7 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
+        return x >= 0;
 	}
 
 	/*

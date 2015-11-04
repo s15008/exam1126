@@ -65,8 +65,8 @@ public class Exam {
 	メソッド average を定義せよ。
 	*/
 
-	double average (int x,int y,int z) {
-		return dDummy;
+	double average(int x,int y,int z) {
+        return (double)sum( sum( x, y), z) / 3;
 	}
 
 	/*

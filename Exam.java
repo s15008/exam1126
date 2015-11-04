@@ -104,7 +104,9 @@ public class Exam {
 	*/
 
 	double getTriangleArea (int x,int y,int z) {
-		return dDummy;
+        double s = ( x + y + z) / 2;
+        double area = (double)( s * ( s - x) * ( s - y) * ( s - z));
+		return area;
 	}
 
 	/*

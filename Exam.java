@@ -75,7 +75,18 @@ public class Exam {
 	*/
 
 	char rank (int score) {
-		return cDummy;
+        if ( score >= 90) {
+            return 'A';
+        }
+        else if ( score >= 70) {
+            return 'B';
+        }
+        else if ( score >= 45) {
+            return 'C';
+        }
+        else {
+            return 'D';
+        }
 	}
 
 	/*
